@@ -1,0 +1,18 @@
+{
+    "1" : {
+            "club" : "AFC AJAX",
+            "city" : "Amsterdam",
+            "country" : "Netherland"
+    },
+    "2" : {
+            "club" : "FC Bayern",
+            "city" : "Minchen",
+            "country" : "Germany"
+    },
+     "3" : {
+            "club" : "FC Chelsea",
+            "city" : "London",
+            "country" : "England"
+    }
+}
+        
