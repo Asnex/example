@@ -1,3 +1,5 @@
 Test for gitHub:
 
 SSH key test
+
+git push
