@@ -4,4 +4,4 @@ SSH key test
 
 git push with origin master
 
-force origin
+force origin test
