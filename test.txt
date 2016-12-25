@@ -3,3 +3,5 @@ Test for gitHub:
 SSH key test
 
 git push with origin master
+
+force origin
