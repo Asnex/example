@@ -4,38 +4,38 @@
               <div class="panel panel-default">
                 <div class="panel-heading">Arrays</div>
                     <div class="panel-body">
-                        <div class="arrays"> 
+                        <div class="arrays">
                            <blockquote>
                                 <pre>
                                     <code>
-               # Arrays for testing purposes, associative & indexed 
+               # Arrays for testing purposes, associative & indexed
                 $array = [                                              $secondArray = [                          $thirdArray = [
                     'first'  => 'PHP',                                          'C',                                 '0' => 'PHP',
                     'second' => 'JavaScript',                                   'C#',                                'second' => 'HTML',
                     'third'  => 'HTML',                                         'JAVA',                              'JAVA',
                     'fourth' => 'CSS',                                          '.NET',                              'fourth' => 'CSS',
                     'fifth'  => 'MySql'                                         'Pyton'                              '5' => 'Pyton'
-                    ];                                                     ];                                      ]; 
-                    
-                  # Multidimensional array  
+                    ];                                                     ];                                      ];
+
+                  # Multidimensional array
                $fourthArray = [
-                      [                                [                          [ 
+                      [                                [                          [
                          'id' => 1,                        'id' => 2,                 'id' => 3,
-                         'os' => 'Windows',                'os' => 'Linux',           'os' => 'Macintosh', 
-                         'version' =>                      'version' =>               'version' => 
-                      [                                 [                         [ 
-                              10,                          'Ubuntu',                  'Leopard', 
+                         'os' => 'Windows',                'os' => 'Linux',           'os' => 'Macintosh',
+                         'version' =>                      'version' =>               'version' =>
+                      [                                 [                         [
+                              10,                          'Ubuntu',                  'Leopard',
                                7,                          'Centos',                  'Mavericks',
                              'XP'                          'Fedora',                  'Sierra'
                        ]                       ]                                  ]
-  
-                      ],                      ],                                 ] 
+
+                      ],                      ],                                 ]
                ];
                               </code>
-                                </pre>     
+                                </pre>
                             </blockquote>
-                                 <?php 
-                # Array for testing purposes 
+                                 <?php
+                # Array for testing purposes
                 $array = [
                     'first'  => 'PHP',
                     'second' => 'JavaScript',
@@ -56,52 +56,52 @@
                      'JAVA',
                      'fourth' => 'CSS',
                      '5' => 'Pyton'
-                     
+
                  ];
                  $fourthArray = [
   [
     'id' => 1,
     'os' => 'Windows',
-    'version' =>  
+    'version' =>
       [
          10,
          7,
-         'XP' 
+         'XP'
           ]
-  
+
   ],
   [
     'id' => 2,
     'os' => 'Linux',
-     'version' =>  
+     'version' =>
       [
          'Ubuntu',
          'Centos',
-         'Fedora' 
+         'Fedora'
           ]
   ],
   [
     'id' => 3,
     'os' => 'Macintosh',
-    'version' =>  
+    'version' =>
       [
          'Leopard',
          'Mavericks',
-         'Sierra' 
+         'Sierra'
           ]
   ]
 ];
 
 
 ?>
-                                
-                            
+
+
                              <table id="tableArrays" class="table table-hover table-bordered dt-responsive">
                                 <thead>
                                     <tr>
-                                        <th>Function</th> 
-                                         <th>Output</th> 
-                                          <th>Comment</th> 
+                                        <th>Function</th>
+                                         <th>Output</th>
+                                          <th>Comment</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -211,11 +211,11 @@
                                     </tr>
                                       <tr>
                                         <td><span class="label label-default">array_map()</span></td>
-                                         <td><?php 
+                                         <td><?php
                                         function array_map_compare($v1,$v2)
                                             {
                                             if ($v1===$v2):
-                                                return "same"; 
+                                                return "same";
                                                 else:
                                                 return "different";
                                             endif;
@@ -269,7 +269,7 @@
                                     </tr>
                                      <tr>
                                         <td><span class="label label-default">array_reduce()</span></td>
-                                         <td><?php 
+                                         <td><?php
                                         function array_reduce_string($v1,$v2)
                                             {
                                             return $v1 . "-" . $v2;
@@ -352,7 +352,7 @@
                                     </tr>
                                       <tr>
                                         <td><span class="label label-default">compact()</span></td>
-                                         <td><?php 
+                                         <td><?php
                                          $os = "Linux";
                                          $version = "Kubuntu";
                                          $codename = " Xenial Xerus";
@@ -390,15 +390,83 @@
                                                 print_r($range); ?></td>
                                           <td>Assign values to a list of variables in one operation, This function only works on numerical arrays</td>
                                     </tr>
-                                  
+
                                 </tbody>
                             </table>
-                           
-                           
-               
-                    </div></div>   
+
+
+
+                    </div></div>
                 <div class="panel-footer"></div>
-            </div>  
+            </div>
+            <div class="panel panel-default">
+                      <div class="panel-heading">Array operators</div>
+                          <div class="panel-body">
+                              <div class="arrayOperators">
+
+                               <table class="table table-hover">
+                               <thead>
+                                <tr>
+                                 <th>Operator</th>
+                                 <th>Name</th>
+                                 <th class="exampleWidth">Example</th>
+                                 <th>Description</th>
+                                 <th>Array return</th>
+                                </tr>
+                               </thead>
+                               <tbody>
+
+                               <tr>
+                                 <td>+</td>
+                                 <td>Union</td>
+                                 <td>$array + $secondArray</td>
+                                 <td>Union of $array and $secondArray</td>
+                                 <td><?php $union = $array + $secondArray;
+                                     print_r($union)
+                                     ?></td>
+                               </tr>
+                               <tr>
+                                 <td>==</td>
+                                 <td>Equality</td>
+                                 <td>$array == $secondArray</td>
+                                 <td>Returns true if $array and $secondArray have the same key/value pairs</td>
+                                 <td><?= ($array == $secondArray) ? "true" : "false"; ?></td>
+                               </tr>
+                               <tr>
+                                 <td>===</td>
+                                 <td>Identity</td>
+                                 <td>$array === $secondArray</td>
+                                 <td>Returns true if $array and $secondArray have the same key/value pairs in the same order and of the same types</td>
+                                 <td><?= ($array === $secondArray) ? "true" : "false"; ?></td>
+                               </tr>
+                               <tr>
+                                 <td>!=</td>
+                                 <td>Inequality</td>
+                                 <td>$array != $secondArray</td>
+                                 <td>Returns true if $array is not equal to $secondArray</td>
+                                 <td><?= ($array != $secondArray) ? "true" : "false"; ?></td>
+                               </tr>
+                               <tr>
+                                 <td><></td>
+                                 <td>Inequality</td>
+                                 <td>$array <> $secondArray</td>
+                                 <td>Returns true if $array is not equal to $secondArray</td>
+                                 <td><?= ($array <> $secondArray) ? "true" : "false"; ?></td>
+                               </tr>
+                               <tr>
+                                 <td>!==</td>
+                                 <td>Non-identity</td>
+                                 <td>$array !== $secondArray</td>
+                                 <td>Returns true if $array is not identical to $secondArray</td>
+                                 <td><?= ($array !== $secondArray) ? "true" : "false"; ?></td>
+                               </tr>
+
+                               </tbody>
+                       </table>
+                               </div>
+                              </div>
+                      <div class="panel-footer">PHP array operators are used to compare arrays.</div>
+                      </div>
         </div>
                  </div>
-</div>    
+</div>

@@ -49,6 +49,11 @@
                                           <td> Removes whitespace or other characters from the right end of a string</td>
                                     </tr>
                                      <tr>
+                                        <td><span class="label label-default">substr()</span></td>
+                                         <td><?= substr($str, 6, 20);?></td>
+                                          <td>Returns the portion of string specified by the start and length parameters</td>
+                                    </tr>
+                                     <tr>
                                         <td><span class="label label-default">chr()</span></td>
                                          <td><?= chr(64);?></td>
                                           <td>Returns a character from the specified ASCII value</td>

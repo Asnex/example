@@ -1,11 +1,11 @@
 <div class="tab-pane active" id="intro">
-   
+
     <div class="col-md-12">
         <div class="container">
               <div class="panel panel-default">
                 <div class="panel-heading">Constants</div>
                     <div class="panel-body">
-                        <div class="constants"> 
+                        <div class="constants">
                              <blockquote>
                                 <pre>
                                     <code>
@@ -13,7 +13,7 @@ define("GREETING", "Welcome to PHP!");
 const GREETINGS = "Welcome to PHP!";
 echo "define: " . GREETING . " const: " . GREETINGS;
 </code>
-                                </pre>     
+                                </pre>
                             </blockquote>
                        <?php
 define("GREETING", "Welcome to PHP!");
@@ -21,20 +21,20 @@ const GREETINGS = "Welcome to PHP!";
 echo "define: " . GREETING . " const: " . GREETINGS;
 ?>
 
-                    </div></div>   
+                    </div></div>
                 <div class="panel-footer">Constants are automatically global and can be used across the entire script.</div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">Scope</div>
                     <div class="panel-body">
-                        <div class="globalScope"> 
+                        <div class="globalScope">
                         <?php
 $x = 25;
 $y = 50;
 
 function globalScope() {
     global $x, $y;
-    
+
     echo "Output is:: " . $y = $x + $y;
 }
 
@@ -45,32 +45,32 @@ globalScope();
                             <blockquote>
                                 <pre>
                                     <code>
-                                        
-$x = 25; 
+
+$x = 25;
 $y = 50;  <?= br(2); ?>
 
-function globalScope() {  
+function globalScope() {
     global $x, $y;
-    echo $y = $x + $y; 
-    } 
-    OR by using $GLOBALS[] array 
+    echo $y = $x + $y;
+    }
+    OR by using $GLOBALS[] array
     $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
 </code>
-                                </pre>     
+                                </pre>
                             </blockquote>
 
 
 
-                    </div></div>   
+                    </div></div>
                 <div class="panel-footer">Example of global scope, since variable declared outside scope, can't be accessed within scope and reverse.</div>
             </div>
-            
+
             <?= hr(); ?>
-            
+
              <div class="panel panel-default">
                 <div class="panel-heading">Static keyword</div>
                     <div class="panel-body">
-                        <div class="staticKey"> 
+                        <div class="staticKey">
                         <?php
 
    class staticClass
@@ -81,7 +81,7 @@ static function staticMethod() {
        # Iterrate throught static variable
      echo self::$i;
      self::$i++;
-    
+
 }
 }
 # Set variable value
@@ -100,7 +100,7 @@ staticClass::staticMethod();
                             <blockquote>
                                 <pre>
                                     <code>
-                                        
+
    class staticClass
  {
        # static variable
@@ -109,7 +109,7 @@ staticClass::staticMethod();
        # Iterrate throught static variable
      echo self::$i;
      self::$i++;
-    
+
   }
  }
  # Set variable value
@@ -123,12 +123,12 @@ staticClass::staticMethod();
  br();
  staticClass::staticMethod();
 </code>
-                                </pre>     
+                                </pre>
                             </blockquote>
 
 
 
-                    </div></div>   
+                    </div></div>
                 <div class="panel-footer">Example of static key, when we don't want variable value to be deleted, but preserved.</div>
             </div>
              </div>
