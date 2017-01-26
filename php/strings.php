@@ -4,17 +4,17 @@
        <div class="panel panel-default">
                 <div class="panel-heading">Strings</div>
                     <div class="panel-body">
-                        <div class="strings"> 
-                       <?php 
-                       print $str = "This is a string for 'manipulations'";
+                        <div class="strings">
+                       <?php
+                       echo $str = "This is a string for 'manipulations'";
                        hr();
                        ?>
                             <table id="tableStrings" class="table table-hover table-bordered dt-responsive">
                                 <thead>
                                     <tr>
-                                        <th>Function</th> 
-                                         <th>Output</th> 
-                                          <th>Comment</th> 
+                                        <th>Function</th>
+                                         <th>Output</th>
+                                          <th>Comment</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -171,20 +171,14 @@
                                     </tr>
                                 </tbody>
                             </table>
-                           
-                           
-                           
-                            
-                          
-                         
-                    </div></div>   
+                    </div></div>
                 <div class="panel-footer">Example of most useful string manipulations.</div>
             </div>
-       
+
         </div>
 
                  </div>
-    
-     
+
+
 
                  </div>

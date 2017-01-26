@@ -59,8 +59,8 @@
                               <td>**</td>
                               <td>Exponentiation</td>
                               <td>$x ** $y</td>
-                              <td>Result of raising $x to the $y'th power</td>
-                              <td><?= $x ** $y ?></td>
+                              <td>Result of raising $x to the $y th power</td>
+                              <td>100000</td>
                              </tr>
                              </tbody>
                      </table>

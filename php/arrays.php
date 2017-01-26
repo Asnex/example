@@ -143,18 +143,18 @@
                                     </tr>
                                      <tr>
                                         <td><span class="label label-default">array_change_key_case()</span></td>
-                                         <td><?php print_r(array_change_key_case($array,CASE_UPPER));?></td>
+                                         <td><?php  print_r(array_change_key_case($array,CASE_UPPER));?></td>
                                           <td>Changes all keys in an array to lowercase or uppercase</td>
                                     </tr>
                                      <tr>
                                         <td><span class="label label-default">array_chunk()</span></td>
-                                         <td><?php print_r(array_chunk($array, 3));?></td>
+                                         <td><?php  print_r(array_chunk($array, 3));?></td>
                                           <td>Splits an array into chunks of new arrays</td>
                                     </tr>
                                      <tr>
                                         <td><span class="label label-default">array_column()</span></td>
-                                         <td><?php $os = array_column($fourthArray, 'os');
-                                                   print_r($os);
+                                         <td><?php // $os = array_column($fourthArray, 'os');
+                                                  // var_dump($os);
                                                    ?></td>
                                           <td>Returns the values from a single column in the input array</td>
                                     </tr>
@@ -220,7 +220,7 @@
                                                 return "different";
                                             endif;
                                             }
-                                          print_r(array_map("array_map_compare",$array, $thirdArray));?></td>
+                                        //  print_r(array_map("array_map_compare",$array, $thirdArray));?></td>
                                           <td>Sends each value of an array to a user-made function, and returns an array with new values, given by the user-made function</td>
                                     </tr>
                                      <tr>
@@ -274,7 +274,7 @@
                                             {
                                             return $v1 . "-" . $v2;
                                             }
-                                          print_r(array_reduce($array, 'array_reduce_string'));?></td>
+                                        //  print_r(array_reduce($array, 'array_reduce_string'));?></td>
                                           <td>Sends the values in an array to a user-defined function, and returns a string</td>
                                     </tr>
                                     <tr>

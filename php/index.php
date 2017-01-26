@@ -9,14 +9,30 @@
       rel="stylesheet"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous">
+      <link rel="icon" href="../images/php-icon.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/3.3.7/css/dataTables.bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/3.3.7/css/responsive.bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="../css/jquery.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="../css/php.css">
-        <link rel="icon" href="../images/php-icon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
 
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+        <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" />
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js" />
+         <script type="text/javascript" src="../js/php.js"></script>
+         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+         <script>hljs.initHighlightingOnLoad();</script>
+
+         <script>
+          // create DataTable jQuery plugin
+          $(document).ready(function() {
+          $('#tableStrings, #tableArrays').DataTable();
+      } );</script>
 
    </head>
     <div class="col-md-12">
@@ -60,14 +76,14 @@
  </div>
 <div class="tab-content">
      <?php
-      require 'intro.php';
-      require 'strings.php';
-      require 'operators.php';
-      require 'loops.php';
-      require 'arrays.php';
-      require 'resources.php';
-      require 'patterns.php';
-      require 'codes.php';
+      include_once 'intro.php';
+      include_once 'strings.php';
+      include 'operators.php';
+      include 'loops.php';
+      include 'arrays.php';
+      include 'resources.php';
+      include 'patterns.php';
+      include 'codes.php';
      ?>
 
 <div class="tab-pane" id="functions">
@@ -276,25 +292,5 @@ Example of code::  <?= hr(); ?>
 
 
    </body>
-	<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-  crossorigin="anonymous"></script>
-   <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" />
-   <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js" />
-   <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js" />
-   <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.1.1/js/responsive.bootstrap.min.js" />
 
-   <script type="text/javascript" src="../js/jquery.js"></script>
-   <script type="text/javascript" src="../js/php.js"></script>
-   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-   <script>hljs.initHighlightingOnLoad();</script>
-   <script>
-    // create DataTable jQuery plugin
-    $(document).ready(function() {
-    $('#tableStrings, #tableArrays').DataTable();
-} );</script>
 </html>
